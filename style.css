@@ -2,7 +2,7 @@ header{
     color: white;
     text-align: center;
     border: 3px solid black;
-    background-color: blueviolet;
+    background-color:  #e98824;;
     border-color: none;
     position: fixed;
     top: 0;
@@ -10,6 +10,22 @@ header{
     width: 100%;
     height: 100px;
     z-index: 999px;
+    animation: bounceIn;
+    animation-duration: 3s;
+}
+
+#headerServices{
+    color: white;
+    text-align: center;
+    border: 3px solid black;
+    background-color:  #e98824;;
+    border-color: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
     animation: bounceIn;
     animation-duration: 3s;
 }
@@ -35,12 +51,10 @@ header{
 }
 
 .dropbtn{
-    background-color: lightseagreen;
-    color: aliceblue;
+    color: black;
     padding: 16px;
     font-size: 20px;
     border: none;
-    
 }
 
 .dropdown-content a{
@@ -104,11 +118,12 @@ header{
     padding: 10px 10px 0px 10px;
     animation: fadeInUp;
     animation-duration: 2s;
-    
+    background-color: #500407;
+    z-index: -1;
 }
 
 body{
-    background-color: aqua;
+    background-color: white;
     
  
 }
@@ -116,11 +131,13 @@ body{
     color: black;
     width: 400px;
     height: 50px;
-    border: 1px solid black;
+    display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    background-color: white;
+    
 }
 
 /* copyright symbol */
@@ -145,6 +162,180 @@ content: "\00a9" ;
     margin-right: 50px;
     margin-top: -20px;
     font-size: 25px;
-   
+}
+
+/* services icon */
+
+.services-ico{
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Gtamerica rg',sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #0b0b0c;
+    -webkit-box-direction: normal;
+    text-align: center;
+    width: 50px;
+    aspect-ratio: auto 50 / 63;
+    height: 63px;
+    box-sizing: border-box;
+    border: 0;
+    vertical-align: middle;
+    display: inline-block;
+    max-width: 100%;
+}
+
+/* boxes containing content */
+.flex-1col{
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Gtamerica rg',sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #0b0b0c;
+    box-sizing: border-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    text-decoration: none;
+    justify-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+}
+
+.paragraph{
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Gtamerica rg',sans-serif;
+    line-height: 28px;
+    font-weight: 400;
+    color: black;
+    -webkit-box-direction: normal;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+
+.services-link-wr{
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Gtamerica rg',sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    box-sizing: border-box;
+    background-color: transparent;
+    max-width: 100%;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    padding: 32px 6%;
+    justify-items: center;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    border: 1px solid black;
+    color: #0b0b0c;
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 42px;
+    box-shadow: 5px 10px brown;
+}
+
+._3col-grid{
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Gtamerica rg',sans-serif;
+    color: #333;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: center;
+    box-sizing: border-box;
+    display: grid;
+    padding-top: 100px;
+    -webkit-box-align: start;
+    align-items: start;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px 0px 0px;
+}
+
+#techused{
+    width: fit-content;
+    height: 70px;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.technology-logo{
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Gtamerica rg',sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: center;
+    color: #333;
+    aspect-ratio: auto 178 / 45;
+    box-sizing: border-box;
+    border: 0;
+    vertical-align: middle;
+    display: inline-block;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    max-height: 150px;
+    padding: 20px;
+    filter: grayscale(100%);
+    object-fit: scale-down;
+    cursor: default;
+}
+
+.technology-grid-2col{
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Gtamerica rg',sans-serif;
+    color: #333;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: center;
+    box-sizing: border-box;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-rows: auto auto;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-box-pack: center;
+    justify-content: center;
+    justify-items: stretch;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    align-content: center;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 40px;
+}
+
+/* techstack paragraph */
+#techstack{
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+    
 
 }
+
+
